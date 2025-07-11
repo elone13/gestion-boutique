@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'guard' => env('NOVA_GUARD', null),
+    'guard' => env('NOVA_GUARD', 'admin'),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'passwords' => env('NOVA_PASSWORDS', null),
+    'passwords' => env('NOVA_PASSWORDS', 'admins'),
 
     /*
     |--------------------------------------------------------------------------
