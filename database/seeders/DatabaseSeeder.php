@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Admin;
+use App\Models\User;
 use App\Models\Categorie;
 use App\Models\Client;
 use App\Models\Produit;
@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // Créer un administrateur
-        Admin::create([
-            'nom' => 'Administrateur',
+        User::create([
+            'name' => 'Administrateur',
             'email' => 'admin@magasin.com',
             'password' => Hash::make('password123'),
         ]);

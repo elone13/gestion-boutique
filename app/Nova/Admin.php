@@ -13,16 +13,16 @@ class Admin extends Resource
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\Admin>
+     * @var class-string<\App\Models\User>
      */
-    public static $model = \App\Models\Admin::class;
+    public static $model = \App\Models\User::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'nom';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -30,7 +30,7 @@ class Admin extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'nom', 'email',
+        'id', 'name', 'email',
     ];
 
     /**
@@ -44,7 +44,7 @@ class Admin extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('Nom')
+            Text::make('Name')
                 ->sortable()
                 ->rules('required', 'max:255'),
 
