@@ -22,7 +22,7 @@ class Admin extends Resource
      *
      * @var string
      */
-    public static $title = 'nom';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -30,7 +30,7 @@ class Admin extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'nom', 'email',
+        'id', 'name', 'email',
     ];
 
     /**
